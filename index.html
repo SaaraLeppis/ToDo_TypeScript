@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Open+Sans&display=swap&family=Indie+Flower&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+    <title>Saara's ToDo-app</title>
+</head>
+
+<body>
+    <!-- Covering content -->
+    <section class="content-wrap">
+        <!-- HEADER  -->
+        <header class="header-part">
+            <h1>What To Do?</h1>
+            <!-- *--*-- Section for input --*--* -->
+            <section id="input-form">
+                <input id="task-input" type="text" placeholder="Add what to do..." tabindex="0"
+                    title="Type new task and click button to add to list">
+                <button id="adding-btn" name="button" title="Add new task to list" aria-label="Add new task to list"
+                    tabindex="0"> +</button>
+            </section>
+            <!-- alert on changes -->
+            <div class="alert">
+                <p> </p>
+            </div>
+        </header>
+        <!-- Section to show inputs -->
+        <section id="list-of-todos">
+            <!-- AWESOME symbols =====
+                <i class="far fa-trash-alt"></i>
+                <i class="fas fa-plus-square"></i>
+                <i class="far fa-check-square"></i>
+            -->
+
+            <div class="list-item">
+                <h2>SOMETHING TO DO :</h2>
+                <ul id="ul-of-todos"></ul>
+                </ul>
+            </div>
+        </section>
+        <section id=#bottom-part>
+            <button id="clear-list" name="clear" title="Clear everything from list" tabindex="0"> &#10094; Remove
+                tasks
+                &#10095;
+            </button>
+        </section>
+    </section>
+    <script src="../public/index.js"></script>
+</body>
+
+</html>
